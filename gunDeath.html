@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+		<title>Vishal Doshi</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="shortcut icon" href="images/logo3.png" type="image/x-icon" />
+		<script type="text/javascript" src="js/lib/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/src/jQueryScript.js"></script>
+</html>
+	<style>
+		body {
+		  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+		.states {
+		  fill: none;
+		  stroke: rgb(4, 58, 71);
+		  stroke-linejoin: round;
+		}
+
+		.states-choropleth {
+		  fill: #FFFFBF;
+		}
+
+		#tooltip-container {
+		  position: absolute;
+		  background-color: #fff;
+		  color: #000;
+		  padding: 10px;
+		  border: 1px solid;
+		  display: none;
+		}
+
+		.tooltip_key {
+		  font-weight: bold;
+		}
+
+		.tooltip_value {
+		  margin-left: 20px;
+		  float: right;
+		}
+
+		#canvas-svg{
+		background:#abd9e9;
+		}
+	</style>
+
+	<head>
+		<script type="text/javascript" src="js/lib/d3.min.js"></script>
+		<script type="text/javascript" src="js/lib/topojson.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/src/d3Map.js"></script>
+		<script type="text/javascript" src="js/src/jQueryScript.js"></script>
+	</head>
+
+	<body onload='d3Map()'>
+		<div id="page-wrap">
+		<header><div id="headerDiv" style="background-color:#abd9e9">
+			<a href="home.html" id="headerLink">
+			<img src="images/logo.png"  width="60" height="60" alt="Vishal's Logo" id ="img1" style="display: inline;" ><h1>Vishal Doshi</h1><span id="tagline"><i>Learning something new</i></span></a>
+		</div></header>
+		<div class="navBar">
+			<h2>
+				<ul class="navBar">
+					<li class="navBar"><a class="navBar" href="home.html" >Home</a></li>
+					<li class="navBar"><a class="navBar" href="aboutMe.html" >About_Me</a></li>
+					<li class="navBar"><a class="navBar activeTab" href="gunDeath.html" >Gun_Deaths_Visualization</a></li>
+				</ul>
+			</h2>
+		</div>
+		
+		<h3>
+			<span style="color:#B31D14;">Gun Death Visualization:</span> People Been Killed by Guns in the US
+		</h3>
+		<div id="tooltip-container">
+
+		</div>
+		<div id="canvas-svg" style="border: 1px solid;"></div>
+		<div id = "filter" align="center">
+			<br>
+			<form >
+				<b>
+				<span>Choose the gender to filter: &nbsp&nbsp&nbsp&nbsp</span>
+		    	<input type="radio" name="gender" value="B" checked>Both&nbsp&nbsp&nbsp</input>
+		    	<input type="radio" name="gender" value="M">Male&nbsp&nbsp&nbsp
+		    	<input type="radio" name="gender" value="F">Female
+		    	<b>
+			</form>
+			<br>&nbsp
+
+		</div>
+	</div>
+	</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+This Code was written by Vishal Doshi at University of Illinois at Chicago for class CS522: Human Computer Interaction.
+The Website consist of Visualization people been killed by guns in the US.
+All necessary Libraries are included. And consists of 2 Script files:
+1. jQueryScripts.js: Has the visual effect code written using jQuery
+2. d3Map.js: Has the code for visualizing the data.
+3. Colors were chosen from ColorBrewer2.org and maniputated on their Value parameter to suit the eyes.
